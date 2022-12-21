@@ -57,7 +57,7 @@ async def unload(ctx, extension):
 @bot.command()
 async def reload(ctx, extension):
   await bot.reload_extension(f'cmds.{extension}')
-  await ctx.send(f'Re -   Loaded {extension} done!')
+  await ctx.send(f'Re - Loaded {extension} done!')
 
 # 用迴圈導入 cmds
 async def load_extensions():
