@@ -14,6 +14,8 @@
 python 3.9.10
 ```
 
+[Embed Editor](https://cog-creators.github.io/discord-embed-sandbox/)
+
 # Installation
 Before running, you must first obtain a TOKEN
 
