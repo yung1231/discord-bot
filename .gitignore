@@ -1,1 +1,4 @@
 .env
+
+cmds/__pycache__/
+core/__pycache__/

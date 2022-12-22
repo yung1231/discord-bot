@@ -34,15 +34,15 @@ async def on_ready():
 # 	if message.content == 'Hello':
 # 		await message.channel.send('Hello')
 
-@bot.event
-async def on_member_join(member):
-    channel = bot.get_channel(558186833109057548) # 每個 channel 都有各自的 ID
-    await channel.send(f'{member} welcome welcome welcome!')
+# @bot.event
+# async def on_member_join(member):
+#     channel = bot.get_channel(558186833109057548) # 每個 channel 都有各自的 ID
+#     await channel.send(f'{member} welcome welcome welcome!')
 
-@bot.event
-async def on_raw_reaction_add(ctx):
-	c = bot.get_channel(ctx.channel_id)
-	await c.send(ctx.emoji.name)
+# @bot.event
+# async def on_raw_reaction_add(ctx):
+# 	c = bot.get_channel(ctx.channel_id)
+# 	await c.send(ctx.emoji.name)
 
 @bot.command()
 async def load(ctx, extension):
