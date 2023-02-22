@@ -14,10 +14,10 @@ class Event(Cog_Extension):
       channel = self.bot.get_channel(558186833109057548) # 每個 channel 都有各自的 ID
       await channel.send(f'{member} welcome welcome welcome!')
 
-  @commands.Cog.listener()
-  async def on_raw_reaction_add(self, ctx):
-    c = self.bot.get_channel(ctx.channel_id)
-    await c.send(ctx.emoji.name)
+  # @commands.Cog.listener()
+  # async def on_raw_reaction_add(self, ctx):
+  #   c = self.bot.get_channel(ctx.channel_id)
+  #   await c.send(ctx.emoji.name)
 
 async def setup(bot):
   await bot.add_cog(Event(bot))
